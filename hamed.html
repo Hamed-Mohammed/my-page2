@@ -1,0 +1,220 @@
+<!doctype html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>my page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        .imgbk {
+            background-image: url("img/img3.jpg");
+        }
+        .b{
+            border: 4px white solid;
+        }
+
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><script>
+
+                var text="<p class=\"text-center\">Welcome to my page</p>";
+                var speed=80;
+
+                if (document.all||document.getElementById){
+                    document.write('<span id="highlight">' + text + '</span>');
+                    var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+                }
+                else
+                    document.write(text)
+                var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0");
+                var r=1;
+                var g=1;
+                var b=1;
+                var seq=1;
+                function changetext(){
+                    rainbow="#"+hex[r]+hex[g]+hex[b];
+                    storetext.style.color=rainbow
+                }
+                function change(){
+                    if (seq==6){
+                        b--;
+                        if (b==0)
+                            seq=1;
+                    }
+                    if (seq==5){
+                        r++;
+                        if (r==12)
+                            seq=6;
+                    }
+                    if (seq==4){
+                        g--;
+                        if (g==0)
+                            seq=5;
+                    }
+                    if (seq==3){
+                        b++;
+                        if (b==12)
+                            seq=4;
+                    }
+                    if (seq==2){
+                        r--;
+                        if (r==0)
+                            seq=3;
+                    }
+                    if (seq==1){
+                        g++;
+                        if (g==12)
+                            seq=2;
+                    }
+                    changetext()
+                }
+                function starteffect(){
+                    if (document.all||document.getElementById)
+                        flash=setInterval("change()",speed)
+                }
+                starteffect()
+            </script></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Email:hamadaaltai@gmail.com</a></li>
+                <li><a href="#">Facebook:Hamed Mohammed M. Saheb</a></li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid style="background-image: url(img/img01.jpg);height: 720px" -->
+</nav>
+
+<br><br><br>
+    <div class="container ">
+        <div class="row imgbk">
+            <div class="col-md-2 col-md-offset-5 ">
+
+                <img src="img/img1.JPG" class="img-responsive img-circle b" width="140" height="140">
+            </div>
+        </div>
+
+    </div>
+<br><br><br>
+<div class="container">
+    <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <h1 ><kbd>Hi<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span></kbd></h1>
+                <p class="lead text-justify alert alert-info">
+                    I am Hamed Mohammed Saheb from Baghdad, Iraq has Diploma in Information and Communications Technology
+                    from Institute of technology Baghdad and has Bachelor of Information Engineering from Al-Nahrain University.
+                </p>
+            </div>
+        </div>
+    </div>
+<br><br><br>
+
+
+
+    <div class="container">
+        <div class="row row-bottom-padded-md">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <h2 class="fh5co-lead animate-box">Certifiate</h2>
+                <p class="fh5co-sub-lead animate-box"> </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xxs-12 ">
+                <a href="img/img9.JPG">
+                    <img src="img/img9.JPG" alt="Image" class="img-responsive img-circle "></a>
+                    <div class="text-center">
+                        <h2>MTCNA</h2>
+                    </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xxs-12 ">
+                <a href="img/img8.JPG">
+                    <img src="img/img8.JPG" alt="Image" class="img-responsive img-circle" ></a>
+                    <div class="text-center">
+                        <h2>Alkhazen System</h2>
+                    </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xxs-12 ">
+                <a href="img/img10.JPG">
+                    <img src="img/img10.JPG" alt="Image" class="img-responsive img-circle"></a>
+                    <div class="text-center">
+                        <h2>Outloook</h2>
+
+                    </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xxs-12 ">
+                <a href="img/img11.JPG">
+                    <img src="img/img11.JPG" alt="Image" class="img-responsive img-circle" ></a>
+                    <div class="text-center">
+                        <h2>PowerPoint</h2>
+                    </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xxs-12 ">
+                <a href="img/img12.JPG">
+                    <img src="img/img12.JPG" alt="Image" class="img-responsive img-circle" ></a>
+                    <div class="text-center">
+                        <h2>Excel</h2>
+                    </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xxs-12 ">
+                <a href="img/img13.JPG">
+                    <img src="img/img13.JPG" alt="Image" class="img-responsive img-circle" ></a>
+                    <div class="text-center">
+                        <h2>Word</h2>
+                    </div>
+
+            </div>
+
+            <div class="col-md-4 col-md-offset-1 ">
+                <a href="img/img6.JPG">
+                    <img src="img/img6.JPG" alt="Image" class="img-responsive img-circle" ></a>
+                    <div class="text-center">
+                        <h2>HTML</h2>
+                    </div>
+
+            </div>
+
+            <div class="col-md-4 col-md-offset-1 ">
+                <a href="img/img7.JPG">
+                    <img src="img/img7.JPG" alt="Image" class="img-responsive img-circle" ></a>
+                    <div class="text-center">
+                        <h2>JavaScript</h2>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
